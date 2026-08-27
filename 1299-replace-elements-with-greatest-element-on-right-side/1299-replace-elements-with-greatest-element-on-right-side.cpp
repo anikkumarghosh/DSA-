@@ -5,6 +5,9 @@ public:
         int getr=INT_MIN;
         int n = arr.size();
         for ( int i =n-1;i>=0;i--){
+            //steps of what we doing actually---
+            //assign imtmin its the getr initially,so the last element must be getr,but the getr must be(max(getr,lastelement)) but we already lost real lastelement so we keep temp for tracking
+            //then we decrease the index
             int temp = arr[i];
             arr[i]=getr;
 
